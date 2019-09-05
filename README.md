@@ -12,7 +12,7 @@ Jquery-validation and jquery-validation-unobtrusive extension for dynamic forms.
 ```javascript
 $.validator.unobtrusive.adapters.add("mustbeball", function (options) {
     options.rules["mustbeball"] = true;
-    options.messages["mustbeball"] = "precisa ser bola";
+    options.messages["mustbeball"] = "Must be a ball.";
 });
 $.validator.addMethod("mustbeball", function (value, element, param) {
     return value == 'ball';
